@@ -1,0 +1,142 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x5bC80C1a291718bEb85Bc4B52E1Df102ef6eA6b1",
+      "txHash": "0xc0a1db29d7891bedcfee0cd1df8bb18296e2323c5d27359760666da46d27cf32",
+      "kind": "uups"
+    },
+    {
+      "address": "0xe4615f5F671a3b9F51b3d7827618e682caa48aDD",
+      "txHash": "0x9a4190b5b3d4b6550ec461dad140f3a2a8f7a610b74dd5c0e2217508cb2d5e7f",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "d4d7ac3878579cd5b93b82f27a82d6fac8b0eeedc6ec315a5e923b4ee31aa1c4": {
+      "address": "0x5E27667Ac933F8085F522a49B52D9cc2A135FB5D",
+      "txHash": "0x838eacc76c03e3ff02d7c64c7f68334ff73ca56039dcfe257e173dc4ca792d13",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "offchainSigner",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "TherasShop",
+            "src": "contracts/TherasShop.sol:39"
+          },
+          {
+            "label": "therasFee",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "TherasShop",
+            "src": "contracts/TherasShop.sol:40"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)81_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)30_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)758_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
