@@ -1,5 +1,25 @@
 {
   "name": "starex",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.ts",
+    "deploy:core": "hardhat run scripts/deploy-core.ts",
+    "deploy:tokens": "hardhat run scripts/deploy-mock-tokens.ts",
+    "verify": "hardhat run scripts/verify-contracts.ts",
+    "setup": "hardhat run scripts/setup-environment.ts",
+    "deploy:localhost": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "deploy:hyperion": "hardhat run scripts/deploy.ts --network hyperion",
+    "deploy:core:sepolia": "hardhat run scripts/deploy-core.ts --network sepolia",
+    "deploy:core:hyperion": "hardhat run scripts/deploy-core.ts --network hyperion",
+    "deploy:tokens:sepolia": "hardhat run scripts/deploy-mock-tokens.ts --network sepolia",
+    "deploy:tokens:hyperion": "hardhat run scripts/deploy-mock-tokens.ts --network hyperion",
+    "verify:sepolia": "hardhat run scripts/verify-contracts.ts --network sepolia",
+    "verify:hyperion": "hardhat run scripts/verify-contracts.ts --network hyperion",
+    "setup:sepolia": "hardhat run scripts/setup-environment.ts --network sepolia",
+    "setup:hyperion": "hardhat run scripts/setup-environment.ts --network hyperion"
+  },
   "devDependencies": {
     "@chainlink/contracts": "^0.8.0",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
@@ -10,6 +30,7 @@
     "@nomiclabs/hardhat-ethers": "^2.0.0",
     "@nomiclabs/hardhat-etherscan": "^3.0.0",
     "@typechain/ethers-v5": "^10.1.0",
+    "@typechain/ethers-v6": "^0.5.1",
     "@typechain/hardhat": "^6.1.2",
     "@types/chai": "^4.2.0",
     "@types/mocha": ">=9.1.0",
